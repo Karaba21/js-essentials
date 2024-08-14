@@ -1,22 +1,79 @@
 // 0 - Bajar repo, hacer hola mundo console.log
+console.log("Hola mundo");
 
 // 2 - Funciones:
 // add(firstOperator, secondOperator),
+function add(firstOperator, secondOperator){
+    suma = firstOperator + secondOperator
+    return suma;
+}
+console.log(add(3,4));
 // subtract(firstOperator, secondOperator),
+function subtract(firstOperator,secondOperator){
+    resta = firstOperator - secondOperator
+    return resta;
+}
+console.log(subtract(3,2))
 // divide(firstOperator, secondOperator),
+function divide(firstOperator, secondOperator){
+    division = firstOperator / secondOperator
+    return division;
+}
+console.log(divide(4,2));
 // multiply(firstOperator, secondOperator)
+function multiply(firstOperator, secondOperator){
+    multiplicacion = firstOperator * secondOperator
+    return multiplicacion;
+}
+console.log(multiply(4,2));
 
 // 3 - Funcion
 // dress(temperature, isRaining)
 // si llueve, llevar paraguas☂️. si la temperatura
 // es menor a 10 ir en auto🚗, si es mayor a 30 ir de short🩳.
 // si la temperatura es 30 usar lentes 🕶
+function dress(temperatura, isRaining) {
+    if (isRaining) {
+        console.log("llevar paraguas");
+    }
+
+    if (temperatura < 10) {
+        console.log("ir en auto");
+    } else if (temperatura > 30) {
+        console.log("ir de short");
+    } else if (temperatura === 30) {
+        console.log("usar lentes");
+    }
+}
+
+dress(30, true); // Esto imprimirá "llevar paraguas☂️"
 
 // 4 - Funcion
 // calculate(operation, firstOperator, secondOperator)
+function calculate(operation, firstOperator, secondOperator){
+    switch (operation){
+        case  "+":
+            console.log("resultado: ", firstOperator + secondOperator)
+            break;
+        case  "-":
+            console.log("resultado: ", firstOperator - secondOperator)
+            break;
+        case  "*":
+            console.log("resultado: ", firstOperator * secondOperator)
+            break;
+        case  "/":
+            console.log("resultado: ", firstOperator / secondOperator)
+            break;
+    }
+}
+calculate("+", 3, 4);
+
 
 // 5 - Funcion
 // eating(name, foods['🍔','🍟','🍗',])
+function eating (name, foods){
+    
+}
 
 // 6 - Funcion
 // finalCountDown(count)
