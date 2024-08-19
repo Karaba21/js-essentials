@@ -72,8 +72,19 @@ calculate("+", 3, 4);
 // 5 - Funcion
 // eating(name, foods['🍔','🍟','🍗',])
 function eating (name, foods){
-    
+    switch (name){
+        case "hamburguer":
+            foods = '🍔'
+            break;
+        case "fries":
+            foods = '🍟'
+            break;
+        case "chicken":
+            foods = '🍗'
+            break;
+    }
 }
+console.log(eating("hamburger"))
 
 // 6 - Funcion
 // finalCountDown(count)
@@ -87,6 +98,23 @@ function eating (name, foods){
 // 75-84 => BMB
 // 85-96 => MB
 // 97-100 => S
+function getGrade(score){
+    if (score > 0 && score <= 40){
+        console.log("D")
+    } else if (score > 40 && score <= 60) {
+        console.log("R")
+    } else if (score > 60 && score <= 74) {
+        console.log("B")
+    } else if (score > 74 && score <= 84) {
+        console.log("BMB")
+    } else if (score > 84 && score <= 96) {
+        console.log("MB")
+    } else if (score > 96 && score <= 100) {
+        console.log("S")
+    }
+}
+getGrade(87)
+
 
 // 8 - Funcion
 // fillCart(person, articlesCollection)
